@@ -36,8 +36,7 @@
                 android:layout_marginLeft="10dp"
                 app:srcCompat="@drawable/glass" />
 
-            <Button
-                android:id="@+id/button_search"
+            <ImageButton                android:id="@+id/button_search"
                 android:layout_width="wrap_content"
                 android:layout_height="53dp"
                 android:layout_marginRight="10dp"
@@ -72,12 +71,13 @@
             android:layout_weight="1"
             app:srcCompat="@drawable/background" />
 
-        <Button
+        <ImageButton
             android:id="@+id/button_studycafe"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_weight="1"
             android:background="@drawable/study"
+            android:scaleType="fitCenter"
             tools:ignore="SpeakableTextPresentCheck"/>
 
         <Space
@@ -85,11 +85,12 @@
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
-        <Button
+        <ImageButton
             android:id="@+id/button_instagram"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_weight="1"
+            android:scaleType="fitCenter"
             android:background="@drawable/photozone"
             tools:ignore="SpeakableTextPresentCheck" />
 
@@ -114,7 +115,7 @@
             android:layout_weight="1"
             app:srcCompat="@drawable/background" />
 
-        <Button
+        <ImageButton
             android:id="@+id/button_takeout"
             android:layout_width="150dp"
             android:layout_height="150dp"
@@ -127,7 +128,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
-        <Button
+        <ImageButton
             android:id="@+id/button_bookmark"
             android:layout_width="150dp"
             android:layout_height="150dp"
