@@ -36,16 +36,17 @@
                 android:layout_marginLeft="10dp"
                 app:srcCompat="@drawable/glass" />
 
-            <ImageButton                android:id="@+id/button_search"
+            <Button
+                android:id="@+id/button_search"
                 android:layout_width="wrap_content"
                 android:layout_height="53dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
-                android:background="#FFFFFF"
+                android:background="@color/white"
                 android:gravity="center_vertical"
                 android:paddingLeft="20dp"
                 android:text="검색"
-                android:textColor="#AAAAAA"
+                android:textColor="#747474"
                 android:textStyle="bold"
                 tools:ignore="TextContrastCheck" />
         </LinearLayout>
