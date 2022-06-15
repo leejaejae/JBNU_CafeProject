@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
+=======
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/user/StudioProjects/m_project/cafe_jaerim/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/user/StudioProjects/m_project/cafe_jaerim/app/src/main/res/layout/activity_ediya_page1.xml" value="0.1" />
+        <entry key="..\:/Users/user/StudioProjects/m_project/cafe_jaerim/app/src/main/res/layout/activity_ediya_page2.xml" value="0.12310030395136778" />
+        <entry key="..\:/Users/user/StudioProjects/m_project/cafe_jaerim/app/src/main/res/layout/activity_ediya_page3.xml" value="0.12310030395136778" />
+        <entry key="..\:/Users/user/StudioProjects/m_project/cafe_jaerim/app/src/main/res/layout/activity_ediya_page4.xml" value="0.12310030395136778" />
+        <entry key="..\:/Users/user/StudioProjects/m_project/cafe_jaerim/app/src/main/res/layout/activity_main.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+>>>>>>> f12ebf6cee3a861ed05910b151cd7ccfd7d51b07
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
