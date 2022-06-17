@@ -11,22 +11,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cafe_jaerim">
         <activity
-            android:name=".EdiyaFirst"
-            android:exported="false" />
-        <activity
-            android:name=".EdiyaFirst1"
-            android:exported="false"
-            tools:ignore="Instantiatable" />
-        <activity
-            android:name=".EdiyaFirst2"
-            android:exported="false"
-            tools:ignore="Instantiatable" />
-        <activity
-            android:name=".EdiyaFirst3"
-            android:exported="false"
-            tools:ignore="Instantiatable" />
-        <activity android:name=".SearchList"/>
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -34,5 +18,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SearchList"/>
     </application>
 </manifest>
