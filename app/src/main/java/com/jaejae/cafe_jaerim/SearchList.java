@@ -1,10 +1,12 @@
 package com.jaejae.cafe_jaerim;
 
 import android.content.Context;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
@@ -25,15 +27,34 @@ public class SearchList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_searchlist);
 
+//        FirebaseFirestore database = FirebaseFirestore.getInstance();
+
         editSearch = findViewById(R.id.editSearch);
         listView = findViewById(R.id.listView);
 
         // 리스트를 생성한다.
         list = new ArrayList<>();
 
-        // 검색에 사용할 데이터을 미리 저장한다.
+        // 검색에 사용할 데이터을 미리 저장한다. -> 이걸 디비에서 받아오면 되는거자네 ?
         settingList();
-
+//        database.collection("cafe_list").get();
+//                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+//                    list.add()
+//                    @Override
+//                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+//                        if (task.isSuccessful()) {
+//                            for (QueryDocumentSnapshot document : task.getResult()) {
+//                                Log.d(TAG, document.getId() + " => " + document.getData());
+//                                String info = task.getResult();
+//
+//                            }
+//                        } else {
+//                            Log.w(TAG, "Error getting documents.", task.getException());
+//                        }
+//                    }
+//                });
+//        list.add(database.toString());
+//        System.out.print(list);
         // 리스트의 모든 데이터를 arraylist에 복사한다.// list 복사본을 만든다.
         arraylist = new ArrayList<>();
         arraylist.addAll(list);
@@ -81,7 +102,7 @@ public class SearchList extends AppCompatActivity {
 
         // 문자 입력이 없을때는 모든 데이터를 보여준다.
         if (charText.length() == 0) {
-//              list.addAll(arraylist);
+              list.addAll(arraylist);
         }
         // 문자 입력을 할때..
         else
@@ -101,26 +122,52 @@ public class SearchList extends AppCompatActivity {
         adapter.notifyDataSetChanged();
     }
 
+
     // 검색에 사용될 데이터를 리스트에 추가한다.
-    private void settingList(){
-//        list.add("kimjongwon");
-//        list.add("kimgunhui");
-//        list.add("choims");
-//        list.add("parkyoungje");
-//        list.add("kimdongwoong");
-//        list.add("parkyoungje");
-//        list.add("parkyoungje");
-//        list.add("parkyoungje");
-//        list.add("parkyoungje");
-//        list.add("parkyoungje");
-//        list.add("parkyoungje");
-//        list.add("parkyoungje");
-//        list.add("parkyoungje");
-//        list.add("parkyoungje");
-//        list.add("parkyoungje");
-//        list.add("parkyoungje");
-//        list.add("parkyoungje");
-
-
+    private void settingList() {
+        list.add("우노의 정원");
+        list.add("예쁜하루 전북대점");
+        list.add("할리스 전북대 덕진광장점");
+        list.add("모모의 다락방");
+        list.add("인앤아웃");
+        list.add("명륜");
+        list.add("스타벅스 전북대점");
+        list.add("인솔커피");
+        list.add("드롭탑");
+        list.add("투썸플레이스 전주전북대점");
+        list.add("이디야커피 전북대구정문점");
+        list.add("공차");
+        list.add("텐퍼센트커피 전주전북대점");
+        list.add("빽다방");
+        list.add("커피디딤");
+        list.add("포멀커피");
+        list.add("노트릭");
+        list.add("로이");
+        list.add("고매드비");
+        list.add("케이빈");
+        list.add("토프레소");
+        list.add("오늘과 오늘 사이");
+        list.add("어느날의 오후");
+        list.add("성근커피바");
+        list.add("몽레브");
+        list.add("카페구디");
+        list.add("카페 프로바이더");
+        list.add("카페 이프온리");
+        list.add("작은곰자리");
+        list.add("도란도란");
+        list.add("할리스 전주백제대로점");
+        list.add("Ivy586");
+        list.add("2:in");
+        list.add("팬도로시");
+        list.add("파인땡큐");
+        list.add("플레인빈커피");
+        list.add("스위머");
+        list.add("그남자네");
+        list.add("네커피");
+        list.add("이디야 커피 전북대점");
+        list.add("메리엔다");
+        list.add("스노잉 본점");
+        list.add("알엘 커피");
     }
 }
+

@@ -38,10 +38,6 @@ public class MainActivity extends AppCompatActivity {
         imageView = findViewById(R.id.imageView);
         imageView1 = findViewById(R.id.imageView1);
         imageView2 = findViewById(R.id.imageView2);
-        imageView3 = findViewById(R.id.imageView3);
-        imageView6 = findViewById(R.id.imageView6);
-        imageView7 = findViewById(R.id.imageView7);
-        imageView10 = findViewById(R.id.imageView10);
         imageView11 = findViewById(R.id.imageView11);
 
         button_search.setOnClickListener(new View.OnClickListener() {

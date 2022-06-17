@@ -3,8 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-
-        <entry key="..\:/Android/cafe_jaerim/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/Users/user/StudioProjects/m_project/cafe_jaerim/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/user/StudioProjects/m_project/cafe_jaerim/app/src/main/res/drawable/gradient.xml" value="0.157" />
         <entry key="..\:/Users/user/StudioProjects/m_project/cafe_jaerim/app/src/main/res/drawable/ic_baseline_delete_outline_24.xml" value="0.157" />
@@ -13,18 +11,12 @@
         <entry key="..\:/Users/user/StudioProjects/m_project/cafe_jaerim/app/src/main/res/layout/activity_ediya_page2.xml" value="0.12310030395136778" />
         <entry key="..\:/Users/user/StudioProjects/m_project/cafe_jaerim/app/src/main/res/layout/activity_ediya_page3.xml" value="0.12310030395136778" />
         <entry key="..\:/Users/user/StudioProjects/m_project/cafe_jaerim/app/src/main/res/layout/activity_ediya_page4.xml" value="0.12310030395136778" />
-        <entry key="..\:/Users/user/StudioProjects/m_project/cafe_jaerim/app/src/main/res/layout/activity_main.xml" value="0.264" />
-<<<<<<< HEAD
+        <entry key="..\:/Users/user/StudioProjects/m_project/cafe_jaerim/app/src/main/res/layout/activity_itemlist.xml" value="0.23802083333333332" />
+        <entry key="..\:/Users/user/StudioProjects/m_project/cafe_jaerim/app/src/main/res/layout/activity_main.xml" value="0.176" />
         <entry key="..\:/Users/user/StudioProjects/m_project/cafe_jaerim/app/src/main/res/layout/activity_searchlist.xml" value="0.176" />
+        <entry key="..\:/Users/user/StudioProjects/m_project/cafe_jaerim/app/src/main/res/layout/activity_studycafe_list.xml" value="0.23802083333333332" />
         <entry key="..\:/Users/user/StudioProjects/m_project/cafe_jaerim/app/src/main/res/layout/row_listview.xml" value="0.1125" />
         <entry key="..\:/Users/user/StudioProjects/m_project/cafe_jaerim/app/src/main/res/xml/searchable.xml" value="0.1" />
-=======
-<<<<<<< HEAD
-
-=======
-        <entry key="..\:/Users/user/StudioProjects/m_project/cafe_jaerim/app/src/main/res/layout/activity_searchlist.xml" value="0.25364583333333335" />
->>>>>>> 81b76780316719b51092a49d4a99bfb2faac3058
->>>>>>> 7c04f39bcb5b47c6f2585c94dc90c16d26f84c1f
       </map>
     </option>
   </component>
