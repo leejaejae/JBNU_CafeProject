@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.jaejae.cafe_jaerim.cafe;
 
 import android.os.Bundle;
@@ -12,3 +13,5 @@ public class Ediya extends AppCompatActivity {
 //        super.onCreate(saved)
     }
 }
+=======
+>>>>>>> fc5b6904803298fa4f865cdc19648f35118fcc2e
