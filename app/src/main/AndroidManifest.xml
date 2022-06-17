@@ -10,12 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Cafe_jaerim">
-        <activity android:name=".EdiyaFirst" />
-        <activity android:name=".EdiyaFirst1" />
-        <activity android:name=".EdiyaFirst2" />
-        <activity android:name=".EdiyaFirst3" />
         <activity android:name=".SearchList"/>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
