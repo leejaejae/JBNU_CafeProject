@@ -1,21 +1,24 @@
 package com.jaejae.cafe_jaerim;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.CheckBox;
-import android.widget.ImageButton;
+        import android.content.Intent;
+        import android.os.Bundle;
+        import android.view.View;
+        import android.widget.CheckBox;
+        import android.widget.ImageButton;
 
-import androidx.appcompat.app.AppCompatActivity;
+        import androidx.appcompat.app.AppCompatActivity;
 
-public class Ediya extends AppCompatActivity {
+        import java.util.ArrayList;
+        import java.util.List;
+
+
+public class Ediya_jbnu extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ediya);
+        setContentView(R.layout.activity_ediya_jbnu);
 
         ImageButton back_button = (ImageButton) findViewById(R.id.back_button);
-
         CheckBox favoriteBtn = (CheckBox) findViewById(R.id.checkbox);
 
         Intent intent = getIntent();

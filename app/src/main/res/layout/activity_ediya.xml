@@ -66,12 +66,13 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <ImageButton
-                android:id="@+id/bookmark_pic1"
+            <CheckBox
+                android:id="@+id/checkbox"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="5dp"
-                android:background="@drawable/bookmark_pic1"/>
+                android:button="@null"
+                android:background="@drawable/custom_checkbox" />
         </LinearLayout>
 
         <LinearLayout
