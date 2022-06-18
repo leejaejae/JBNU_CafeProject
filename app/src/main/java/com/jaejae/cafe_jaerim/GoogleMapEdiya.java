@@ -34,11 +34,17 @@ public class GoogleMapEdiya extends AppCompatActivity implements OnMapReadyCallb
 
         fusedLocationProviderClient=LocationServices.getFusedLocationProviderClient(this);
 
+
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
+<<<<<<< HEAD
         if (mapFragment != null){
+=======
+        if (mapFragment != null) {
+>>>>>>> e7890e1f146f01fe93b55746341e735a075bb55f
             mapFragment.getMapAsync(this);
         }
     }
+
 
     @Override
     public void onMapReady(com.google.android.gms.maps.GoogleMap googleMap) {

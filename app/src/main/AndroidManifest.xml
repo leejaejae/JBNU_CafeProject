@@ -45,6 +45,9 @@
         <activity android:name=".Roy"/>
         <activity android:name=".Ivy"/>
 
+        <activity android:name=".GoogleMapEdiya"/>
+
 
     </application>
 </manifest>
+
