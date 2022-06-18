@@ -15,6 +15,14 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
+
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,6 +33,7 @@ public class SearchList extends AppCompatActivity {
     private EditText editSearch;        // 검색어를 입력할 Input 창
     private searchlistAdapter adapter;      // 리스트뷰에 연결할 아답터
     private ArrayList<String> arraylist;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,16 +51,29 @@ public class SearchList extends AppCompatActivity {
         adapter = new searchlistAdapter(list, this);
         listView.setAdapter(adapter);
 
-//        Intent intent = getIntent();
-//        String filename = intent.getStringExtra("filename");
+//        settingList();
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                String n = list.toString();
-//                Intent intent = new Intent(getApplicationContext(),  .class);
-//                intent.putExtra("filename", n);
-//                startActivity(intent);
+            public void onItemClick(AdapterView adapterView, View view, int i, long l) {
+                String selected_item = (String)adapterView.getItemAtPosition(i);
+                Intent intent;
+                if(selected_item != null && selected_item.equals("이디야 커피 전북대점")) {
+                    intent = new Intent(getApplicationContext(), Ediya.class);
+                }
+                else if(selected_item != null && selected_item.equals("이디야커피 전북대구정문점")) {
+                    intent = new Intent(getApplicationContext(), Ediya_jbnu.class);
+                }
+                else if(selected_item != null && selected_item.equals("인앤아웃")) {
+                    intent = new Intent(getApplicationContext(), In_out.class);
+                }
+                else if(selected_item != null && selected_item.equals("인솔커피")) {
+                    intent = new Intent(getApplicationContext(), Insole.class);
+                }
+                else{
+                    intent = new Intent(getApplicationContext(), MainActivity.class);
+                }
+                startActivity(intent);
             }
         });
 
@@ -82,10 +104,9 @@ public class SearchList extends AppCompatActivity {
 
     // 검색을 수행하는 메소드
     public void search(String charText) {
-
         list.clear();
         if (charText.length() == 0) {
-              list.addAll(arraylist);
+//              list.addAll(arraylist);
         } else {
             for(int i = 0; i < arraylist.size() ; i++) {
                 if (arraylist.get(i).toLowerCase().contains(charText)) { list.add(arraylist.get(i)); }

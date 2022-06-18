@@ -21,5 +21,8 @@
         <activity android:name=".MainActivity"/>
         <activity android:name=".SearchList"/>
         <activity android:name=".Ediya"/>
+        <activity android:name=".Ediya_jbnu"/>
+        <activity android:name=".In_out"/>
+        <activity android:name=".Insole"/>
     </application>
 </manifest>

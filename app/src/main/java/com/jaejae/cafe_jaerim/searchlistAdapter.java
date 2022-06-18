@@ -28,17 +28,17 @@ public class searchlistAdapter extends BaseAdapter {
 
     @Override
     public Object getItem(int i) {
-        return null;
+        return list.get(i);
     }
 
     @Override
-    public long getItemId(int i) {
-        return 0;
+    public long getItemId(int position) {
+        return position;
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup viewGroup) {
-        final int pos = position;
+//        final int pos = position;
         final Context context = viewGroup.getContext();
 
         if(convertView == null){
