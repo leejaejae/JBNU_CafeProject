@@ -42,14 +42,18 @@ public class SearchList extends AppCompatActivity {
         adapter = new searchlistAdapter(list, this);
         listView.setAdapter(adapter);
 
+//        Intent intent = getIntent();
+//        String filename = intent.getStringExtra("filename");
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent);
+                String n = list.toString();
+//                Intent intent = new Intent(getApplicationContext(),  .class);
+//                intent.putExtra("filename", n);
+//                startActivity(intent);
             }
         });
-
 
         editSearch.addTextChangedListener(new TextWatcher() {
             @Override
@@ -67,12 +71,6 @@ public class SearchList extends AppCompatActivity {
             }
         });
         list.clear();
-    }
-
-    public void onItemClick(AdapterView<?> parent, View v, int position, long id){
-//        String cafe_name = (String) parent.getItemAtPosition(position);
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
     }
 
     @Override
@@ -96,8 +94,6 @@ public class SearchList extends AppCompatActivity {
         adapter.notifyDataSetChanged();
     }
 
-
-    // 검색에 사용될 데이터를 리스트에 추가한다.
     private void settingList() {
         list.add("우노의 정원");
         list.add("예쁜하루 전북대점");
