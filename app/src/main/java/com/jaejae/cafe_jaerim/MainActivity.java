@@ -45,29 +45,29 @@ public class MainActivity extends AppCompatActivity{
         button_studycafe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                Intent intent = new Intent(MainActivity.this, StudyCafeList.class);
-                startActivity(intent);  // 액티비티 이동
+//                Intent intent = new Intent(MainActivity.this, StudyCafeList.class);
+//                startActivity(intent);  // 액티비티 이동
             }
         });
         button_instagram.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                Intent intent = new Intent(MainActivity.this, StudyCafeList.class);
-                startActivity(intent);  // 액티비티 이동
+//                Intent intent = new Intent(MainActivity.this, StudyCafeList.class);
+//                startActivity(intent);  // 액티비티 이동
             }
         });
         button_takeout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                Intent intent = new Intent(MainActivity.this, StudyCafeList.class);
-                startActivity(intent);  // 액티비티 이동
+//                Intent intent = new Intent(MainActivity.this, StudyCafeList.class);
+//                startActivity(intent);  // 액티비티 이동
             }
         });
         button_bookmark.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                Intent intent = new Intent(MainActivity.this, StudyCafeList.class);
-                startActivity(intent);  // 액티비티 이동
+//                Intent intent = new Intent(MainActivity.this, StudyCafeList.class);
+//                startActivity(intent);  // 액티비티 이동
             }
         });
 

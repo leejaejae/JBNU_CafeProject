@@ -70,9 +70,34 @@ public class SearchList extends AppCompatActivity {
                 else if(selected_item != null && selected_item.equals("인솔커피")) {
                     intent = new Intent(getApplicationContext(), Insole.class);
                 }
+                else if(selected_item != null && selected_item.equals("할리스 전북대 덕진광장점")) {
+                    intent = new Intent(getApplicationContext(), Hollys.class);
+                }
+                else if(selected_item != null && selected_item.equals("작은곰자리")) {
+                    intent = new Intent(getApplicationContext(), Little_bear.class);
+                }
+                else if(selected_item != null && selected_item.equals("명륜")) {
+                    intent = new Intent(getApplicationContext(), Myeongnyun.class);
+                }
+                else if(selected_item != null && selected_item.equals("빽다방")) {
+                    intent = new Intent(getApplicationContext(), Paiks_coffee.class);
+                }
+                else if(selected_item != null && selected_item.equals("알엘 커피")) {
+                    intent = new Intent(getApplicationContext(), Ralee.class);
+                }
+                else if(selected_item != null && selected_item.equals("로이")) {
+                    intent = new Intent(getApplicationContext(), Roy.class);
+                }
+                else if(selected_item != null && selected_item.equals("Ivy586")) {
+                    intent = new Intent(getApplicationContext(), Ivy.class);
+                }
+                else if(selected_item != null && selected_item.equals("스타벅스 전북대점")) {
+                    intent = new Intent(getApplicationContext(), starBucks.class);
+                }
                 else{
                     intent = new Intent(getApplicationContext(), MainActivity.class);
                 }
+
                 startActivity(intent);
             }
         });

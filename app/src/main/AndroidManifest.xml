@@ -35,5 +35,15 @@
         <activity android:name=".Ediya_jbnu"/>
         <activity android:name=".In_out"/>
         <activity android:name=".Insole"/>
+        <activity android:name=".Hollys"/>
+        <activity android:name=".Little_bear"/>
+        <activity android:name=".Myeongnyun"/>
+        <activity android:name=".Paiks_coffee"/>
+        <activity android:name=".starBucks"/>
+        <activity android:name=".Ralee"/>
+        <activity android:name=".Roy"/>
+        <activity android:name=".Ivy"/>
+
+
     </application>
 </manifest>
