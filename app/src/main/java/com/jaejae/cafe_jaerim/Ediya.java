@@ -15,10 +15,19 @@ public class Ediya extends AppCompatActivity {
         setContentView(R.layout.activity_ediya);
 
         ImageButton back_button = (ImageButton) findViewById(R.id.back_button);
+        ImageButton map = (ImageButton) findViewById(R.id.imageButton);
 
         CheckBox favoriteBtn = (CheckBox) findViewById(R.id.checkbox);
 
         Intent intent = getIntent();
+
+        map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent map = new Intent(getApplicationContext(), GoogleMapEdiya.class);
+                startActivity(map);
+            }
+        });
 
         back_button.setOnClickListener(new View.OnClickListener() {
             @Override
