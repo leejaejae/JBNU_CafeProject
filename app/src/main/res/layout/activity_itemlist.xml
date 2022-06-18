@@ -10,6 +10,7 @@
         android:orientation="horizontal">
 
         <ImageView
+            android:id="@+id/iv_image"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_margin="5dp"
@@ -35,18 +36,12 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/tv_tel"
+                    android:id="@+id/tv_operating_hours"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="전번"
+                    android:text="운영 요일"
                     android:layout_margin="5dp"/>
 
-                <TextView
-                    android:id="@+id/tv_address"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="주소"
-                    android:layout_margin="5dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -66,13 +61,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="콘센트"
-                    android:layout_margin="5dp"/>
-
-                <TextView
-                    android:id="@+id/tv_seat"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="좌석 수"
                     android:layout_margin="5dp"/>
 
                 <TextView

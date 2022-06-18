@@ -1,18 +1,25 @@
 package com.jaejae.cafe_jaerim;
 
+import android.view.View;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class StudyCafeData extends AppCompatActivity {
+
+    private String profile;
     private String name;
-    private String tel;
-    private String address;
     private String operating_hours;
     private String wifi;
-    private String num_socket;
-    private String num_seat;
+    private String socket;
     private String bathroom;
 
     public StudyCafeData(){}
+
+    public String getProfile() { return profile; }
+
+    public void setProfile(String profile) { this.profile = profile; }
 
     public String getName() {
         return name;
@@ -20,22 +27,6 @@ public class StudyCafeData extends AppCompatActivity {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getTel() {
-        return tel;
-    }
-
-    public void setTel(String tel) {
-        this.tel = tel;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
     }
 
     public String getOperating_hours() {
@@ -54,20 +45,12 @@ public class StudyCafeData extends AppCompatActivity {
         this.wifi = wifi;
     }
 
-    public String getNum_socket() {
-        return num_socket;
+    public String getSocket() {
+        return socket;
     }
 
-    public void setNum_socket(String num_socket) {
-        this.num_socket = num_socket;
-    }
-
-    public String getNum_seat() {
-        return num_seat;
-    }
-
-    public void setNum_seat(String num_seat) {
-        this.num_seat = num_seat;
+    public void setSocket(String socket) {
+        this.socket = socket;
     }
 
     public String getBathroom() {
@@ -76,5 +59,11 @@ public class StudyCafeData extends AppCompatActivity {
 
     public void setBathroom(String bathroom) {
         this.bathroom = bathroom;
+    }
+
+    public class StudyCafeDataViewHolder extends RecyclerView.ViewHolder {
+        public StudyCafeDataViewHolder(@NonNull View itemView) { // 이 두줄 지워야하나
+            super(itemView);
+        }
     }
 }
