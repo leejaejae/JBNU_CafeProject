@@ -41,11 +41,11 @@ public class GoogleMapEdiya extends AppCompatActivity implements OnMapReadyCallb
     @Override
     public void onMapReady(com.google.android.gms.maps.GoogleMap googleMap) {
         this.googleMap = googleMap;
-        //35.84666 127.13373 전북대학교 (시작화면)
-        LatLng latlng = new LatLng(35.84666, 127.13373);
+        //35.842426122772885, 127.12770954185385 이디야커피 전북대점
+        LatLng latlng = new LatLng(35.842426122772885, 127.12770954185385);
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(latlng));
         googleMap.moveCamera(CameraUpdateFactory.zoomTo(15));
-        MarkerOptions marketOptions = new MarkerOptions().position(latlng).title("전북대학교 전주캠퍼스");
+        MarkerOptions marketOptions = new MarkerOptions().position(latlng).title("이디야커피 전북대점");
         googleMap.addMarker(marketOptions);
 
         /*
