@@ -38,6 +38,9 @@ public class searchlistAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup viewGroup) {
+        final int pos = position;
+        final Context context = viewGroup.getContext();
+
         if(convertView == null){
             convertView = inflate.inflate(R.layout.row_listview,null);
 
@@ -48,9 +51,7 @@ public class searchlistAdapter extends BaseAdapter {
         }else{
             viewHolder = (ViewHolder)convertView.getTag();
         }
-
         viewHolder.label.setText(list.get(position));
-
         return convertView;
     }
 
