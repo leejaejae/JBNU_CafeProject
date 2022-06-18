@@ -73,7 +73,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="5dp"
-                android:background="@drawable/bookmark_pic1" />
+                android:background="@drawable/bookmark_pic2" />
         </LinearLayout>
 
         <LinearLayout
