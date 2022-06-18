@@ -10,18 +10,9 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
-//public class MainActivity extends AppCompatActivity {
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_main);
-//    }
-//}
-
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
     Button button_search;
-    ImageButton button_studycafe, button_instagram, button_takeout, button_bookmark;
+    ImageButton button_studycafe, button_instagram, button_takeout, button_bookmark,back_button;
     ImageView imageView, imageView1, imageView2, imageView3, imageView6, imageView7, imageView10, imageView11;
 
     @Override
@@ -39,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
         imageView1 = findViewById(R.id.imageView1);
         imageView2 = findViewById(R.id.imageView2);
         imageView11 = findViewById(R.id.imageView11);
+        back_button = findViewById(R.id.back_button);
+
+//        back_button.setOnClickListener(this);
 
         button_search.setOnClickListener(new View.OnClickListener() {
             @Override
