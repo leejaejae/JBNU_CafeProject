@@ -30,6 +30,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity"/>
+        <activity android:name=".GoogleMapEdiya"/>
         <activity android:name=".SearchList"/>
         <activity android:name=".Ediya"/>
         <activity android:name=".Ediya_jbnu"/>
