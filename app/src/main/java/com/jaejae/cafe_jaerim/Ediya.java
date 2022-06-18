@@ -8,10 +8,6 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.ArrayList;
-import java.util.List;
-
-
 public class Ediya extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +15,7 @@ public class Ediya extends AppCompatActivity {
         setContentView(R.layout.activity_ediya);
 
         ImageButton back_button = (ImageButton) findViewById(R.id.back_button);
+
         CheckBox favoriteBtn = (CheckBox) findViewById(R.id.checkbox);
 
         Intent intent = getIntent();

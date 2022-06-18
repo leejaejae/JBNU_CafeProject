@@ -13,34 +13,32 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="450dp"
-            android:orientation="vertical"
-            android:background="@drawable/insole_pic1">
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/back_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="290dp"
+                android:background="@drawable/back_pic" />
 
-                <ImageButton
-                    android:id="@+id/back_button"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="290dp"
-                    android:background="@drawable/back_pic" />
-
-                <ImageButton
-                    android:id="@+id/imageButton"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="12dp"
-                    android:background="@drawable/address_icon" />
-            </LinearLayout>
-
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/address_icon" />
         </LinearLayout>
 
+
+        <ImageView
+            android:id="@+id/image_ediya1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:srcCompat="@drawable/ediya" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -56,25 +54,24 @@
             android:background="#FFD37C">
 
             <TextView
-                android:id="@+id/insole1"
+                android:id="@+id/ediya1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="13dp"
-                android:layout_marginRight="195dp"
+                android:layout_marginRight="210dp"
                 android:layout_marginBottom="10dp"
-                android:text="인솔커피 전북대점"
+                android:text="이디야 전북대점"
                 android:textColor="#43423F"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <CheckBox
-                android:id="@+id/checkbox"
+            <ImageButton
+                android:id="@+id/bookmark_pic1"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="5dp"
-                android:button="@null"
-                android:background="@drawable/custom_checkbox" />
+                android:background="@drawable/bookmark_pic2"/>
         </LinearLayout>
 
         <LinearLayout
@@ -97,12 +94,12 @@
                 app:srcCompat="@drawable/tel_icon" />
 
             <TextView
-                android:id="@+id/insole2"
+                android:id="@+id/ediya2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginBottom="10dp"
-                android:text="Tel: 063-901-3434"
+                android:text="Tel: 063-277-2227"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -119,27 +116,12 @@
                 app:srcCompat="@drawable/address_icon" />
 
             <TextView
-                android:id="@+id/insole3"
+                android:id="@+id/ediya3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="전북 전주시 덕진구 권삼득로 315 1층"
-                android:textSize="16sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/insole3_1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
                 android:layout_marginBottom="10dp"
-                android:text=" 인솔커피 전북대점"
+                android:text="주소: 전북 전주시 덕진구 명륜3길 10-1"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -156,68 +138,12 @@
                 app:srcCompat="@drawable/time_icon" />
 
             <TextView
-                android:id="@+id/insole4"
+                android:id="@+id/ediya4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="영업 시간: 월 08:00 - 00:00"
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/insole4_1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="110dp"
-                android:text=" 화 08:00 - 00:00"
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/insole4_2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="110dp"
-                android:text=" 수 08:00 - 00:00"
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/insole4_3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="110dp"
-                android:text=" 목 08:00 - 00:00"
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/insole4_4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="110dp"
                 android:layout_marginBottom="10dp"
-                android:text=" 금 08:00 - 00:00"
+                android:text="영업 시간: 매일 11:00 - 23:00"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -234,12 +160,12 @@
                 app:srcCompat="@drawable/wifi_icon" />
 
             <TextView
-                android:id="@+id/insole5"
+                android:id="@+id/ediya5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginBottom="10dp"
-                android:text="Wifii: X"
+                android:text="Wifii: O"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -256,12 +182,12 @@
                 app:srcCompat="@drawable/seat_icon" />
 
             <TextView
-                android:id="@+id/insole6"
+                android:id="@+id/ediya6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginBottom="10dp"
-                android:text="좌석: 6석"
+                android:text="좌석: 76석"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -278,12 +204,12 @@
                 app:srcCompat="@drawable/socket_icon" />
 
             <TextView
-                android:id="@+id/insole7"
+                android:id="@+id/ediya7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginBottom="10dp"
-                android:text="콘센트: O (60여개)"
+                android:text="콘센트: O (40여개)"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -300,12 +226,12 @@
                 app:srcCompat="@drawable/bathroom_icon" />
 
             <TextView
-                android:id="@+id/insole8"
+                android:id="@+id/ediya8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginBottom="30dp"
-                android:text="화장실: 실외"
+                android:text="화장실: 실내"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -328,30 +254,23 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/image_insole2"
-            android:layout_width="match_parent"
-            android:layout_height="650dp"
-            app:srcCompat="@drawable/insole_pic2" />
-
-        <ImageView
-            android:id="@+id/image_insole3"
+            android:id="@+id/image_ediya2"
             android:layout_width="match_parent"
             android:layout_height="600dp"
-            app:srcCompat="@drawable/insole_pic3" />
+            app:srcCompat="@drawable/ediya_pic1" />
 
         <ImageView
-            android:id="@+id/image_insole4"
+            android:id="@+id/image_ediya3"
             android:layout_width="match_parent"
-            android:layout_height="500dp"
-            app:srcCompat="@drawable/insole_pic4" />
-
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ediya_pic2" />
 
         <ImageView
-            android:id="@+id/image_insole5"
-            android:layout_width="wrap_content"
-            android:layout_height="730dp"
-            android:layout_marginBottom="80dp"
-            app:srcCompat="@drawable/insole_pic5" />
+            android:id="@+id/image_ediya4"
+            android:layout_width="410dp"
+            android:layout_height="410dp"
+            android:layout_marginBottom="100dp"
+            app:srcCompat="@drawable/ediya_pic0" />
     </LinearLayout>
 
 

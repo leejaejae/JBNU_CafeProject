@@ -13,9 +13,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="450dp"
+            android:layout_height="350dp"
             android:orientation="vertical"
-            android:background="@drawable/insole_pic1">
+            android:background="@drawable/ralee_pic1">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -56,25 +56,24 @@
             android:background="#FFD37C">
 
             <TextView
-                android:id="@+id/insole1"
+                android:id="@+id/ittle_bear1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="13dp"
-                android:layout_marginRight="195dp"
+                android:layout_marginRight="270dp"
                 android:layout_marginBottom="10dp"
-                android:text="인솔커피 전북대점"
+                android:text="알엘커피"
                 android:textColor="#43423F"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <CheckBox
-                android:id="@+id/checkbox"
+            <ImageView
+                android:id="@+id/bookmark_pic2"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="5dp"
-                android:button="@null"
-                android:background="@drawable/custom_checkbox" />
+                app:srcCompat="@drawable/bookmark_pic2" />
         </LinearLayout>
 
         <LinearLayout
@@ -97,12 +96,12 @@
                 app:srcCompat="@drawable/tel_icon" />
 
             <TextView
-                android:id="@+id/insole2"
+                android:id="@+id/ittle_bear2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginBottom="10dp"
-                android:text="Tel: 063-901-3434"
+                android:text="Tel: 0507-1497-7712"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -119,28 +118,14 @@
                 app:srcCompat="@drawable/address_icon" />
 
             <TextView
-                android:id="@+id/insole3"
+                android:id="@+id/ittle_bear3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="전북 전주시 덕진구 권삼득로 315 1층"
-                android:textSize="16sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/insole3_1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
                 android:layout_marginBottom="10dp"
-                android:text=" 인솔커피 전북대점"
+                android:text="전북 전주시 덕진구 명륜3길 9-1"
                 android:textSize="16sp" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -156,68 +141,12 @@
                 app:srcCompat="@drawable/time_icon" />
 
             <TextView
-                android:id="@+id/insole4"
+                android:id="@+id/ittle_bear4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="영업 시간: 월 08:00 - 00:00"
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/insole4_1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="110dp"
-                android:text=" 화 08:00 - 00:00"
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/insole4_2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="110dp"
-                android:text=" 수 08:00 - 00:00"
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/insole4_3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="110dp"
-                android:text=" 목 08:00 - 00:00"
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/insole4_4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="110dp"
                 android:layout_marginBottom="10dp"
-                android:text=" 금 08:00 - 00:00"
+                android:text="영업 시간: 매일 12:00-21:00"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -234,12 +163,12 @@
                 app:srcCompat="@drawable/wifi_icon" />
 
             <TextView
-                android:id="@+id/insole5"
+                android:id="@+id/ittle_bear5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginBottom="10dp"
-                android:text="Wifii: X"
+                android:text="Wifii: O"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -256,12 +185,12 @@
                 app:srcCompat="@drawable/seat_icon" />
 
             <TextView
-                android:id="@+id/insole6"
+                android:id="@+id/ittle_bear6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginBottom="10dp"
-                android:text="좌석: 6석"
+                android:text="좌석: 32석"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -278,12 +207,12 @@
                 app:srcCompat="@drawable/socket_icon" />
 
             <TextView
-                android:id="@+id/insole7"
+                android:id="@+id/ittle_bear7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginBottom="10dp"
-                android:text="콘센트: O (60여개)"
+                android:text="콘센트: O (20여개)"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -300,7 +229,7 @@
                 app:srcCompat="@drawable/bathroom_icon" />
 
             <TextView
-                android:id="@+id/insole8"
+                android:id="@+id/ittle_bear8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
@@ -328,30 +257,41 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/image_insole2"
-            android:layout_width="match_parent"
-            android:layout_height="650dp"
-            app:srcCompat="@drawable/insole_pic2" />
-
-        <ImageView
-            android:id="@+id/image_insole3"
-            android:layout_width="match_parent"
-            android:layout_height="600dp"
-            app:srcCompat="@drawable/insole_pic3" />
-
-        <ImageView
-            android:id="@+id/image_insole4"
+            android:id="@+id/image_ittle_bear2"
             android:layout_width="match_parent"
             android:layout_height="500dp"
-            app:srcCompat="@drawable/insole_pic4" />
-
+            app:srcCompat="@drawable/ralee_pic2" />
 
         <ImageView
-            android:id="@+id/image_insole5"
+            android:id="@+id/image_ittle_bear3"
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            app:srcCompat="@drawable/ralee_pic3" />
+
+        <ImageView
+            android:id="@+id/image_ittle_bear4"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            app:srcCompat="@drawable/ralee_pic4" />
+
+        <ImageView
+            android:id="@+id/image_ittle_bear5"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            app:srcCompat="@drawable/ralee_pic5" />
+
+        <ImageView
+            android:id="@+id/image_ittle_bear6"
+            android:layout_width="match_parent"
+            android:layout_height="650dp"
+            app:srcCompat="@drawable/ralee_pic6" />
+
+        <ImageView
+            android:id="@+id/image_ittle_bear7"
             android:layout_width="wrap_content"
-            android:layout_height="730dp"
-            android:layout_marginBottom="80dp"
-            app:srcCompat="@drawable/insole_pic5" />
+            android:layout_height="500dp"
+            android:layout_marginBottom="40dp"
+            app:srcCompat="@drawable/ralee_pic7" />
     </LinearLayout>
 
 
