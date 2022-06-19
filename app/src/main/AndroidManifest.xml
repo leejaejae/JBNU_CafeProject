@@ -40,12 +40,23 @@
         <activity android:name=".Little_bear"/>
         <activity android:name=".Myeongnyun"/>
         <activity android:name=".Paiks_coffee"/>
-        <activity android:name=".starBucks"/>
+        <activity android:name=".StarBucks"/>
         <activity android:name=".Ralee"/>
         <activity android:name=".Roy"/>
         <activity android:name=".Ivy"/>
-
+        <activity android:name=".StudyCafeList"/>
         <activity android:name=".GoogleMapEdiya"/>
+        <activity android:name=".GoogleMapEdiyaJbnu"/>
+        <activity android:name=".GoogleMapHollys"/>
+        <activity android:name=".GoogleMapInOut"/>
+        <activity android:name=".GoogleMapInsole"/>
+        <activity android:name=".GoogleMapIvy"/>
+        <activity android:name=".GoogleMapLittleBear"/>
+        <activity android:name=".GoogleMapMyeongnyun"/>
+        <activity android:name=".GoogleMapPaiksCoffee"/>
+        <activity android:name=".GoogleMapRalee"/>
+        <activity android:name=".GoogleMapRoy"/>
+        <activity android:name=".GoogleMapStarbucks"/>
 
 
     </application>

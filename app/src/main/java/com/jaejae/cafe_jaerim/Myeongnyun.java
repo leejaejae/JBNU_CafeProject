@@ -18,6 +18,7 @@ public class Myeongnyun extends AppCompatActivity {
         setContentView(R.layout.activity_myeongnyun);
 
         ImageButton back_button = (ImageButton) findViewById(R.id.back_button);
+        ImageButton map = (ImageButton) findViewById(R.id.imageButton);
         CheckBox favoriteBtn = (CheckBox) findViewById(R.id.checkbox);
 
         Intent intent = getIntent();

@@ -1,6 +1,5 @@
 package com.jaejae.cafe_jaerim;
 
-import android.location.Location;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,19 +15,19 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class GoogleMapPaiksCoffee extends AppCompatActivity implements OnMapReadyCallback {
 
     private com.google.android.gms.maps.GoogleMap googleMap;
-    Location currentLocation;
     FusedLocationProviderClient fusedLocationProviderClient;
-    private static final int REQUEST_CODE=101;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_map_paiks_coffee);
 
         fusedLocationProviderClient= LocationServices.getFusedLocationProviderClient(this);
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
+        if (mapFragment != null) {
+            mapFragment.getMapAsync(this);
+        }
     }
 
     @Override

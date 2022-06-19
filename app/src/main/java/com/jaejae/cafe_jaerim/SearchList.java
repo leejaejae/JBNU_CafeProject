@@ -1,27 +1,19 @@
 package com.jaejae.cafe_jaerim;
 
 import android.content.Context;
-import androidx.annotation.NonNull;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
-
-import com.google.firebase.database.ChildEventListener;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -92,7 +84,7 @@ public class SearchList extends AppCompatActivity {
                     intent = new Intent(getApplicationContext(), Ivy.class);
                 }
                 else if(selected_item != null && selected_item.equals("스타벅스 전북대점")) {
-                    intent = new Intent(getApplicationContext(), starBucks.class);
+                    intent = new Intent(getApplicationContext(), StarBucks.class);
                 }
                 else{
                     intent = new Intent(getApplicationContext(), MainActivity.class);
@@ -146,31 +138,32 @@ public class SearchList extends AppCompatActivity {
         list.add("할리스 전북대 덕진광장점");
         list.add("모모의 다락방");
         list.add("인앤아웃");
-        list.add("명륜");
         list.add("스타벅스 전북대점");
-        list.add("인솔커피");
-        list.add("드롭탑");
+        list.add("드롭탑 커피");
         list.add("투썸플레이스 전주전북대점");
         list.add("이디야커피 전북대구정문점");
-        list.add("공차");
-        list.add("텐퍼센트커피 전주전북대점");
-        list.add("빽다방");
         list.add("커피디딤");
-        list.add("포멀커피");
-        list.add("노트릭");
         list.add("로이");
         list.add("고매드비");
-        list.add("케이빈");
-        list.add("토프레소");
-        list.add("오늘과 오늘 사이");
+        list.add("토프레소 전북대점");
         list.add("어느날의 오후");
         list.add("성근커피바");
-        list.add("몽레브");
         list.add("카페구디");
+        list.add("작은곰자리");
+        list.add("명륜");
+        list.add("인솔커피");
+        list.add("공차");
+        list.add("텐퍼센트커피 전주전북대점");
+        list.add("도란도란");
+        list.add("빽다방");
+        list.add("포멀커피");
+        list.add("노트릭");
+        list.add("케이빈");
+        list.add("이디야 커피 전북대점");
+        list.add("오늘과 오늘 사이");
+        list.add("몽레브");
         list.add("카페 프로바이더");
         list.add("카페 이프온리");
-        list.add("작은곰자리");
-        list.add("도란도란");
         list.add("할리스 전주백제대로점");
         list.add("Ivy586");
         list.add("2:in");
@@ -180,7 +173,6 @@ public class SearchList extends AppCompatActivity {
         list.add("스위머");
         list.add("그남자네");
         list.add("네커피");
-        list.add("이디야 커피 전북대점");
         list.add("메리엔다");
         list.add("스노잉 본점");
         list.add("알엘 커피");
