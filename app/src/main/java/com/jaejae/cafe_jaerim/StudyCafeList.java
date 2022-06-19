@@ -23,20 +23,20 @@ public class StudyCafeList extends AppCompatActivity {
 //    private List<StudyCafeData> list;          // 데이터를 넣은 리스트변수
     private ListView listView;          // 검색을 보여줄 리스트변수
     private TextView title;             // title
-    private searchlistAdapter adapter;      // 리스트뷰에 연결할 아답터
+    private StudyCafeAdapter adapter;      // 리스트뷰에 연결할 아답터
     private ArrayList<StudyCafeData> arraylist;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_itemlist);
+        setContentView(R.layout.activity_study_cafe_list);
 
         title = findViewById(R.id.title);
         listView = findViewById(R.id.listView);
-//        list = new ArrayList<>();
+        arraylist = new ArrayList<>();
 
-//        settingList();
+
 
         arraylist = new ArrayList<>();
 //        arraylist.addAll(list);
@@ -98,33 +98,13 @@ public class StudyCafeList extends AppCompatActivity {
 //            }
 //        });
 //        list.clear();
-    }
 
-    @Override
-    public boolean onTouchEvent(MotionEvent event) {
-        InputMethodManager inputmethod = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-        inputmethod.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
-        return true;
     }
-
-    // 검색을 수행하는 메소드
-//    public void search(String charText) {
-//        list.clear();
-//        if (charText.length() == 0) {
-////              list.addAll(arraylist);
-//        } else {
-//            for(int i = 0; i < arraylist.size() ; i++) {
-//                if (arraylist.get(i).toLowerCase().contains(charText)) { list.add(arraylist.get(i)); }
-//            }
-//        }
-//        adapter.notifyDataSetChanged();
-//    }
 
     private void settingList() {
-        arraylist.add(new StudyCafeData(R.drawable.unos_garden_pic1,"우노의 정원", "O", "O", "O"));
-        arraylist.add(new StudyCafeData(R.drawable.pretty_day_pic1,"예쁜하루 전북대점", "O", "O", "O"));
+        arraylist.add(new StudyCafeData(R.drawable.unos_garden_pic1,"우노의 정원", "O", "O", "X"));
         arraylist.add(new StudyCafeData(R.drawable.hollys_pic1,"할리스 전북대 덕진광장점", "O", "O", "O"));
-        arraylist.add(new StudyCafeData(R.drawable.momo_pic1,"모모의 다락방", "O", "O", "O"));
+        arraylist.add(new StudyCafeData(R.drawable.momo_pic1,"모모의 다락방", "X", "O", "O"));
         arraylist.add(new StudyCafeData(R.drawable.in_out_pic3,"인앤아웃", "O", "O", "O"));
         arraylist.add(new StudyCafeData(R.drawable.starbucks_pic1,"스타벅스 전북대점", "O", "O", "O"));
         arraylist.add(new StudyCafeData(R.drawable.droptop_pic1,"드롭탑 전북대점", "O", "O", "O"));
@@ -134,13 +114,13 @@ public class StudyCafeList extends AppCompatActivity {
         arraylist.add(new StudyCafeData(R.drawable.roy_pic1,"로이", "O", "O", "O"));
         arraylist.add(new StudyCafeData(R.drawable.go_mad_pic1,"고매드비", "O", "O", "O"));
         arraylist.add(new StudyCafeData(R.drawable.to_presso_pic1,"토프레소 전북대점", "O", "O", "O"));
-        arraylist.add(new StudyCafeData(R.drawable.someday_afternoon_pic1,"어느날의 오후", "O", "O", "O"));
-        arraylist.add(new StudyCafeData(R.drawable.sg_coffee_bar_pic1,"성근커피바", "O", "O", "O"));
+        arraylist.add(new StudyCafeData(R.drawable.someday_afternoon_pic1,"어느날의 오후", "X", "O", "X"));
+        arraylist.add(new StudyCafeData(R.drawable.sg_coffee_bar_pic1,"성근커피바", "X", "X", "X"));
         arraylist.add(new StudyCafeData(R.drawable.cafe_goody_pic1,"카페구디", "O", "O", "O"));
-        arraylist.add(new StudyCafeData(R.drawable.little_bear_pic1,"작은곰자리", "O", "O", "O"));
+        arraylist.add(new StudyCafeData(R.drawable.little_bear_pic1,"작은곰자리", "X", "O", "O"));
         arraylist.add(new StudyCafeData(R.drawable.doran_doran_pic1,"도란도란", "O", "O", "O"));
         arraylist.add(new StudyCafeData(R.drawable.hollys_pic1,"할리스 전주백제대로점", "O", "O", "O"));
-        arraylist.add(new StudyCafeData(R.drawable.the_man_pic1,"그남자네", "O", "O", "O"));
+        arraylist.add(new StudyCafeData(R.drawable.the_man_pic1,"그남자네", "X", "O", "X"));
         arraylist.add(new StudyCafeData(R.drawable.ediya_pic0,"이디야 커피 전북대점", "O", "O", "O"));
         arraylist.add(new StudyCafeData(R.drawable.merienda_pic1,"메리엔다", "O", "O", "O"));
         arraylist.add(new StudyCafeData(R.drawable.snowing_pic1,"스노잉 본점", "O", "O", "O"));

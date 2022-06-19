@@ -23,7 +23,6 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class GoogleMapEdiya extends AppCompatActivity implements OnMapReadyCallback {
 
     private com.google.android.gms.maps.GoogleMap googleMap;
-    Location currentLocation;
     FusedLocationProviderClient fusedLocationProviderClient;
     private static final int REQUEST_CODE=101;
 
@@ -42,7 +41,6 @@ public class GoogleMapEdiya extends AppCompatActivity implements OnMapReadyCallb
         }
     }
 
-
     @Override
     public void onMapReady(com.google.android.gms.maps.GoogleMap googleMap) {
         this.googleMap = googleMap;
@@ -53,14 +51,6 @@ public class GoogleMapEdiya extends AppCompatActivity implements OnMapReadyCallb
         MarkerOptions marketOptions = new MarkerOptions().position(latlng).title("이디야커피 전북대점");
         googleMap.addMarker(marketOptions);
 
-        /*
-        // GPS이용 현재위치 표시
-        // 사용자 GPS 요청권한
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-            googleMap.setMyLocationEnabled(true);
-        } else {
-            checkLocationPermissionWithRationale();
-        }*/
     }
 
     /*public static final int MY_PERMISSIONS_REQUEST_LOCATION = 99;
