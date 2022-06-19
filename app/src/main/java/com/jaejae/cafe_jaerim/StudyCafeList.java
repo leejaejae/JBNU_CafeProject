@@ -36,14 +36,14 @@ public class StudyCafeList extends AppCompatActivity {
         listView = findViewById(R.id.listView);
 //        list = new ArrayList<>();
 
-        settingList();
+//        settingList();
 
         arraylist = new ArrayList<>();
 //        arraylist.addAll(list);
 //        adapter = new searchlistAdapter(list, this);
         listView.setAdapter(adapter);
 
-//        settingList();
+        settingList();
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
