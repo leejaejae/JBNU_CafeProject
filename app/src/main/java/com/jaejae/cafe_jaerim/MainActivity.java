@@ -66,8 +66,8 @@ public class MainActivity extends AppCompatActivity{
         button_bookmark.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-//                Intent intent = new Intent(MainActivity.this, StudyCafeList.class);
-//                startActivity(intent);  // 액티비티 이동
+                Intent intent = new Intent(getApplicationContext(), Activity_favList.class);
+                startActivity(intent);  // 액티비티 이동
             }
         });
 

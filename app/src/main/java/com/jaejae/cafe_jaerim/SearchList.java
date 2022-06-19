@@ -86,6 +86,9 @@ public class SearchList extends AppCompatActivity {
                 else if(selected_item != null && selected_item.equals("스타벅스 전북대점")) {
                     intent = new Intent(getApplicationContext(), StarBucks.class);
                 }
+                else if(selected_item != null && selected_item.equals("모모의 다락방")) {
+                    intent = new Intent(getApplicationContext(), Momo.class);
+                }
                 else{
                     intent = new Intent(getApplicationContext(), MainActivity.class);
                 }

@@ -44,6 +44,9 @@ public class Ediya extends AppCompatActivity {
                 if (favoriteBtn.isChecked()) {
                     favoriteBtn.setChecked(true);
 //                    fav_cafe.add("이디야");
+                    Intent faList = new Intent(getApplicationContext(), Activity_favList.class);
+                    faList.putExtra("cafe", "이디야 전북대점");
+                    startActivity(faList);
                 } else {
                     favoriteBtn.setChecked(false);
                 }

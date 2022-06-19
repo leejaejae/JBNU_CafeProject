@@ -1,5 +1,4 @@
 package com.jaejae.cafe_jaerim;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -8,12 +7,15 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
+import java.util.List;
 
-public class Ivy extends AppCompatActivity {
+
+public class SomedayAfternoon extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activiy_ivy);
+        setContentView(R.layout.activity_someday_afternoon);
 
         ImageButton back_button = (ImageButton) findViewById(R.id.back_button);
         ImageButton map = (ImageButton) findViewById(R.id.imageButton);
@@ -24,7 +26,7 @@ public class Ivy extends AppCompatActivity {
         map.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent map = new Intent(getApplicationContext(), GoogleMapIvy.class);
+                Intent map = new Intent(getApplicationContext(), GoodleMapSomeday.class);
                 startActivity(map);
             }
         });
@@ -43,9 +45,6 @@ public class Ivy extends AppCompatActivity {
                 if (favoriteBtn.isChecked()) {
                     favoriteBtn.setChecked(true);
 //                    fav_cafe.add("이디야");
-                    Intent faList = new Intent(getApplicationContext(), Activity_favList.class);
-                    faList.putExtra("cafe", "Ivy 586");
-                    startActivity(faList);
                 } else {
                     favoriteBtn.setChecked(false);
                 }

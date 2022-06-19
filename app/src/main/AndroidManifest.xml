@@ -44,8 +44,9 @@
         <activity android:name=".Ralee"/>
         <activity android:name=".Roy"/>
         <activity android:name=".Ivy"/>
+        <activity android:name=".Momo"/>
         <activity android:name=".StudyCafeList"/>
-        <activity android:name=".GoogleMapEdiya"/>
+
         <activity android:name=".GoogleMapEdiyaJbnu"/>
         <activity android:name=".GoogleMapHollys"/>
         <activity android:name=".GoogleMapInOut"/>
@@ -57,6 +58,8 @@
         <activity android:name=".GoogleMapRalee"/>
         <activity android:name=".GoogleMapRoy"/>
         <activity android:name=".GoogleMapStarbucks"/>
+
+        <activity android:name=".Activity_favList"/>
 
 
     </application>

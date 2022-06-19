@@ -19,9 +19,10 @@ public class StudyCafeAdapter extends ArrayAdapter<StudyCafeData> {
         this.resource = resource;
     }
 
-    @NonNull
-    @Override
-    public View getView(int position, @NonNull View convertView, @NonNull ViewGroup parent) {
-        
-    }
+
+//    @Override
+//    public View getView(int position, @NonNull View convertView, @NonNull ViewGroup parent) {
+//    return position;
+//    }
+
 }
