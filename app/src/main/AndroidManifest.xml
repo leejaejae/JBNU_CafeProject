@@ -57,6 +57,8 @@
         <activity android:name=".GoogleMapRalee"/>
         <activity android:name=".GoogleMapRoy"/>
         <activity android:name=".GoogleMapStarbucks"/>
+        <activity android:name=".InstaCafeList"/>
+        <activity android:name=".TakeOutCafeList"/>
 
 
     </application>

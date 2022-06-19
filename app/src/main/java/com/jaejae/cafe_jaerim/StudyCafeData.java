@@ -5,7 +5,7 @@ import android.media.Image;
 public class StudyCafeData {
     int Image;
     String Name;
-    String Seat;
+    String Wifi;
     String Socket;
     String Restroom;
 
@@ -25,12 +25,12 @@ public class StudyCafeData {
         Name = name;
     }
 
-    public String getSeat() {
-        return Seat;
+    public String getWifi() {
+        return Wifi;
     }
 
-    public void setSeat(String seat) {
-        Seat = seat;
+    public void setWifi(String wifi) {
+        Wifi = wifi;
     }
 
     public String getSocket() {
@@ -49,10 +49,10 @@ public class StudyCafeData {
         Restroom = restroom;
     }
 
-    public StudyCafeData(int image, String name, String seat, String socket, String restroom) {
+    public StudyCafeData(int image, String name, String wifi, String socket, String restroom) {
         Image = image;
         Name = name;
-        Seat = seat;
+        Wifi = wifi;
         Socket = socket;
         Restroom = restroom;
     }
