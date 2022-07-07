@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -35,70 +36,19 @@ public class StudyCafeList extends AppCompatActivity {
         title = findViewById(R.id.title);
         listView = findViewById(R.id.listView);
         arraylist = new ArrayList<>();
-
-
-
-        arraylist = new ArrayList<>();
-//        arraylist.addAll(list);
-//        adapter = new searchlistAdapter(list, this);
-        listView.setAdapter(adapter);
+        ImageButton back_button = (ImageButton) findViewById(R.id.back_button);
 
         settingList();
+        adapter = new StudyCafeAdapter(this, R.layout.activity_itemlist, arraylist);
+        listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        back_button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onItemClick(AdapterView adapterView, View view, int i, long l) {
-                String selected_item = (String)adapterView.getItemAtPosition(i);
-                Intent intent;
-                if(selected_item != null && selected_item.equals("이디야 커피 전북대점")) {
-                    intent = new Intent(getApplicationContext(), Ediya.class);
-                }
-                else if(selected_item != null && selected_item.equals("이디야커피 전북대구정문점")) {
-                    intent = new Intent(getApplicationContext(), Ediya_jbnu.class);
-                }
-                else if(selected_item != null && selected_item.equals("인앤아웃")) {
-                    intent = new Intent(getApplicationContext(), In_out.class);
-                }
-                else if(selected_item != null && selected_item.equals("할리스 전북대 덕진광장점")) {
-                    intent = new Intent(getApplicationContext(), Hollys.class);
-                }
-                else if(selected_item != null && selected_item.equals("작은곰자리")) {
-                    intent = new Intent(getApplicationContext(), Little_bear.class);
-                }
-                else if(selected_item != null && selected_item.equals("로이")) {
-                    intent = new Intent(getApplicationContext(), Roy.class);
-                }
-                else if(selected_item != null && selected_item.equals("Ivy586")) {
-                    intent = new Intent(getApplicationContext(), Ivy.class);
-                }
-                else if(selected_item != null && selected_item.equals("스타벅스 전북대점")) {
-                    intent = new Intent(getApplicationContext(), StarBucks.class);
-                }
-                else{
-                    intent = new Intent(getApplicationContext(), MainActivity.class);
-                }
-
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
             }
         });
-
-//        title.addTextChangedListener(new TextWatcher() {
-//            @Override
-//            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-//            }
-//
-//            @Override
-//            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-//            }
-//
-//            @Override
-//            public void afterTextChanged(Editable editable) {
-//                String text = title.getText().toString();
-//                search(text);
-//            }
-//        });
-//        list.clear();
-
     }
 
     private void settingList() {

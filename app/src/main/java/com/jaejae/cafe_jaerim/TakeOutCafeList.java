@@ -1,6 +1,9 @@
 package com.jaejae.cafe_jaerim;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -24,12 +27,22 @@ public class TakeOutCafeList  extends AppCompatActivity {
 
         title = findViewById(R.id.title);
         listView = findViewById(R.id.listView);
+        ImageButton back_button = (ImageButton) findViewById(R.id.back_button);
+
         arraylist = new ArrayList<>();
 
         settingList();
 //        arraylist.addAll(arraylist);
         adapter = new StudyCafeAdapter(this,R.layout.activity_itemlist, arraylist);
         listView.setAdapter(adapter);
+
+        back_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void settingList() {
